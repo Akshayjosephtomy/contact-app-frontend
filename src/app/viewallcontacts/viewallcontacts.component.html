@@ -1,0 +1,28 @@
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Phone</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let i of contactData">
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.address}}</td>
+                    <td>{{i.phone}}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
